@@ -86,6 +86,11 @@ p {
     Form
    ================= */
 
+input,
+.btn {
+  box-sizing: border-box;
+}
+
 input {
   width: 100%;
   margin-bottom: 0.75em;
@@ -101,7 +106,7 @@ input:focus {
   background-color: #e6e8ec;
 }
 
-button {
+.btn {
   font-family: inherit;
   width: 100%;
   border-radius: 5px;
@@ -109,17 +114,24 @@ button {
   text-transform: uppercase;
   padding: 1em;
   font-weight: 700;
-  color: white;
-  background-color:#9480e4;
   letter-spacing: 1px;
   font-size: 1rem;
 }
 
-.btn:hover {
+.btn-primary {
+  color: white;
+  background-color: #9480e4;
+}
+
+.btn-primary:hover {
   background-color: #b7a7f6;
   cursor: pointer;
 }
 
+.main-content p,
+form {
+  max-width: 450px;
+}
 
 /* =================
     Media queries 
